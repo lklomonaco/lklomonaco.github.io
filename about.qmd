@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+Bookmark this site and repository to keep an eye on my project updates for my EPPS6323 Knowledge Mining class!
+
+```{r}
+1 + 1
+```

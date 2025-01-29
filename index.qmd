@@ -1,0 +1,15 @@
+---
+title: "Logan Lomonaco"
+---
+
+I am a masters student of Economics at The University of Texas at Dallas
+
+Contact me:
+
+[Logan.Lomonaco\@UTDallas.edu](mailto:Logan.Lomonaco@UTDallas.edu)
+
+\[Website\](https://LKLUTD.github.io)
+
+```{r}
+1 + 1
+```
