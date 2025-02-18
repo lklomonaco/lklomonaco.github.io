@@ -160,6 +160,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="./assignment3.html">
  <span class="dropdown-text">Assignment 3</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./class4prep.pdf">
+ <span class="dropdown-text">Class 4 presentation</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -318,21 +322,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>()<span class="sc">-</span>time1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   user  system elapsed 
-   0.00    0.01    0.09 </code></pre>
+   0.02    0.00    0.06 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>time2 <span class="ot">=</span> <span class="fu">proc.time</span>()</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/datageneration/knowledgemining/master/data/Auto.data"</span>)</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>()<span class="sc">-</span>time2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   user  system elapsed 
-   0.02    0.02    0.10 </code></pre>
+   0.03    0.02    0.08 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>time3 <span class="ot">=</span> <span class="fu">proc.time</span>()</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/datageneration/knowledgemining/master/data/Auto.data"</span>,<span class="at">header=</span>T,<span class="at">na.strings=</span><span class="st">"?"</span>)</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">proc.time</span>()<span class="sc">-</span>time3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   user  system elapsed 
-   0.01    0.00    0.09 </code></pre>
+   0.01    0.00    0.03 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check on data</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(Auto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -524,7 +528,7 @@ https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-package
 <pre><code>package 'ISLR' successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-    C:\Users\Spiri\AppData\Local\Temp\Rtmpgp4oZS\downloaded_packages</code></pre>
+    C:\Users\Spiri\AppData\Local\Temp\RtmpyUqOgk\downloaded_packages</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(ptbu, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
