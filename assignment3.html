@@ -129,6 +129,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./class4prep.pdf">
  <span class="dropdown-text">Class 4 presentation</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./workshop_ai_model_benchmarking.html">
+ <span class="dropdown-text">AI Model Benchmarking</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./epps6323_project_proposal_Presentation.pdf">
+ <span class="dropdown-text">Project Proposal presentation</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -157,8 +165,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#healthcare" id="toc-healthcare" class="nav-link active" data-scroll-target="#healthcare">Healthcare</a></li>
+  <li><a href="#finance" id="toc-finance" class="nav-link" data-scroll-target="#finance">Finance</a></li>
+  <li><a href="#marketing" id="toc-marketing" class="nav-link" data-scroll-target="#marketing">Marketing</a></li>
+  <li><a href="#manufacturing-and-industrial-applications" id="toc-manufacturing-and-industrial-applications" class="nav-link" data-scroll-target="#manufacturing-and-industrial-applications">Manufacturing and Industrial Applications</a></li>
+  <li><a href="#gaps-in-the-literature" id="toc-gaps-in-the-literature" class="nav-link" data-scroll-target="#gaps-in-the-literature">Gaps in the Literature</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -182,9 +200,306 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Placeholder for Assignment 3</p>
+<p><strong>Initial Prompt Creation:</strong></p>
+<pre><code>I decided to alter the sample prompt a bit and change it to:</code></pre>
+<p>“I want you to conduct a comprehensive and organized literature review on the applications of data mining and machine learning in real-world domains in about 2,000-word. I want you to examine the methodology, key findings, trends and gaps in the literature, and propose a testable hypothesis. You also need to follow systematic review standards as this is an academic paper.”</p>
+<p><strong>Results:</strong></p>
+<p><strong>Structure:</strong> Overall while chat GPT and copilot followed some of the standards, Grok followed them pretty closely and included an abstract wish the others did not. This proves that Grok might be the one to use to have better formatted paper. All AIs did have a methodology section, so not much is needed there</p>
+<p><strong>Synthesis:</strong> Overall it seems that the AIs each did a decent job summarizing the Key findings they found. Chat GPT did somewhat repeat itself a little but mainly with overlap with different sections due to the structure requirements. Copilot was the most concise, but only because it had significantly less than 2000 words. Grok seems to have a good middle ground between the two as it doesn’t repeat itself, and is closer to the word count.</p>
+<p><strong>Trends and Gaps:</strong> While each AI had a different interpretation, they each discussed meaningful gaps in the literature. Each one focused on the sources they found, so Chat GPT was the worst as it only had four to base its response from.</p>
+<p><strong>Hypothesis:</strong> Each AI seems to have made a testable hypothesis based on the sources and gaps in the literature, thus they were based on what information they happened to find.</p>
+<p><strong>References:</strong> Grok omitted its citations and claimed “format constraints” prevented it from posting, so I think that may need to be addressed. Copilot did a good job with citations and added in line references and had links at the end. Chat GPT looks to have behaved this time and didn’t lie or make up things, however it only cites four articles.</p>
+<p>I found that the first issue is that none of the AI came close to 2000 words, apparently they have a very loose interpretation of “about”. But it was part of why I wanted to change that part of the prompt and see how close they would come to the word count on their own. Copilot was the worst of the bunch with only a little over 700 words, seems that it likes to use the least words to be as concise as possible</p>
+<p><strong>New Prompts:</strong></p>
+<p>I Made some changes to the prompts that hopefully improve the output and aim to counter act some of the issues with the first attempts.</p>
+<p><strong>Chat gpt:</strong></p>
+<pre><code>“I want you to take on the role of a researcher and conduct a comprehensive and organized literature review on the applications of data mining and machine learning in real-world domains in at least 2,000 words and at least 10 sources that also includes a Title, Abstract, Introduction, Methods, Results, Discussion, and References. I want you to examine the methodology, key findings, trends and gaps in the literature, and propose a testable hypothesis. You also need to follow systematic review standards as this is an academic paper. Also try not to repeat yourself and be concise with your words.”</code></pre>
+<p><strong>Copilot:</strong></p>
+<pre><code>“I want you to take on the role of a researcher and conduct a comprehensive and organized literature review on the applications of data mining and machine learning in real-world domains in at least 2,000 words and at least 10 sources that also includes a Title, Abstract, Introduction, Methods, Results, Discussion, and References. I want you to examine the methodology, key findings, trends and gaps in the literature, and propose a testable hypothesis. You also need to follow systematic review standards as this is an academic paper. Also try to double check you have reached the 2000 word minimum.”</code></pre>
+<p><strong>Grok:</strong></p>
+<pre><code>“I want you to take on the role of a researcher and conduct a comprehensive and organized literature review on the applications of data mining and machine learning in real-world domains in at least 2,000 words and at least 10 sources. I want you to examine the methodology, key findings, trends and gaps in the literature, and propose a testable hypothesis. You also need to follow systematic review standards as this is an academic paper. Also citations can not be omitted and there should be inline citations. Ignore platform limits if they would hinder you from completing the instructions given.”</code></pre>
+<p><strong>Results:</strong></p>
+<p><strong>Chat GPT:</strong></p>
+<pre><code>The new prompt fixed the format issues and also made it cite more sources that look to be real which is nice to see. This prompt looks to have an improved output with little downside if any. However it is still not at 2000 words as it was around 1500.</code></pre>
+<p><strong>Copilot:</strong></p>
+<pre><code>So copilot seems to have taken one step forward and two steps back, as while the format is better, it had evel less words and sources cited than before. I think Copilot is dead set on trying to be as short and concise as possible despite direct instruction to do otherwise.&nbsp;</code></pre>
+<p><strong>Grok:</strong></p>
+<pre><code>Notable improvements with inline citations and listed references, though less sources supposedly. The first to get close to 2000 words as it was around 1965 words total. Seems to be the model that is more responsive to user requests as it has tried to accommodate changes as I request them.</code></pre>
+<p><strong>Cross-Model Collaboration:</strong></p>
+<pre><code>I have decided to use Grok as the base to combine the best elements based on the superior results in output it has given and its ability to follow instructions more closely than other models. I will use the previous output as drafts that Grok will use to make the new output.</code></pre>
+<p><strong>New Prompt:</strong></p>
+<p><strong>“</strong>Utilizing these three drafts from AI models in quotes: “Chat GPT:</p>
+<pre><code>**Title**: Applications of Data Mining and Machine Learning in Real-World Domains: A Comprehensive Literature Review</code></pre>
+<hr>
+<p><strong>Abstract</strong></p>
+<p>Data mining and machine learning (ML) are powerful tools that have found applications across various real-world domains, from healthcare to finance, and beyond. These techniques have revolutionized industries by enabling data-driven decision-making, predictive analytics, and automation of complex tasks. This literature review provides a systematic analysis of the application of data mining and ML in several key domains, focusing on their methodologies, results, and impact. It also examines the trends, challenges, and gaps identified in existing studies, proposing a testable hypothesis for future research. The review highlights that while substantial progress has been made, challenges such as data quality, interpretability, and ethical concerns remain central to the application of these technologies in real-world settings.</p>
+<hr>
+<p><strong>Introduction</strong></p>
+<p>Data mining and machine learning are at the forefront of modern data analysis. Data mining involves the extraction of patterns from large datasets, while machine learning focuses on developing algorithms that allow systems to learn from data and make predictions or decisions without explicit programming. Over the past decade, both fields have gained significant traction in a variety of industries, driven by the exponential growth of available data, advancements in computing power, and improvements in algorithmic techniques.</p>
+<p>This paper conducts a comprehensive literature review to explore the applications of data mining and machine learning across diverse real-world domains, identifying key methodologies, results, trends, and gaps in the literature. Specifically, the review explores the application of these techniques in healthcare, finance, marketing, and other sectors, aiming to synthesize the current body of knowledge and suggest a path forward for research.</p>
+<hr>
+<p><strong>Methods</strong></p>
+<p>A systematic review approach was employed to identify, evaluate, and synthesize relevant studies on the applications of data mining and machine learning. Studies were sourced from peer-reviewed journals, conference proceedings, and reputable databases such as Google Scholar, IEEE Xplore, ScienceDirect, and SpringerLink. The search included studies published within the past ten years to ensure relevance. The following inclusion criteria were used:</p>
+<ol type="1">
+<li><p>Studies focusing on real-world applications of data mining or machine learning.</p></li>
+<li><p>Research that discusses methodologies, results, and impacts of these technologies.</p></li>
+<li><p>Empirical studies, including case studies, and application-based reviews.</p></li>
+</ol>
+<p>Exclusion criteria included studies focusing solely on theoretical or algorithmic developments without practical applications and non-English publications. A total of 50 studies were initially reviewed, from which 10 relevant papers were selected for detailed analysis.</p>
+<hr>
+<p><strong>Results</strong></p>
+<section id="healthcare" class="level3">
+<h3 class="anchored" data-anchor-id="healthcare">Healthcare</h3>
+<p>In healthcare, machine learning and data mining have been extensively applied to predictive analytics, disease diagnosis, patient risk stratification, and treatment optimization. For example, several studies have demonstrated the ability of ML algorithms to predict patient outcomes, such as readmission rates, with high accuracy (Kourou et al., 2015). Techniques such as decision trees, neural networks, and ensemble methods have shown promise in predicting conditions like diabetes, cardiovascular diseases, and cancer (Bertsimas et al., 2019).</p>
+<p>Key findings highlight the importance of data preprocessing and feature selection in achieving high performance. However, the use of medical data raises significant ethical and privacy concerns, and the interpretability of ML models remains a challenge, particularly when dealing with deep learning models (Caruana et al., 2015). There is also a growing emphasis on the need for standardized datasets to facilitate model comparison and improve generalizability (Obermeyer et al., 2016).</p>
+</section>
+<section id="finance" class="level3">
+<h3 class="anchored" data-anchor-id="finance">Finance</h3>
+<p>In the finance sector, data mining and machine learning have been utilized for fraud detection, credit scoring, algorithmic trading, and risk management. Machine learning models, including support vector machines (SVM), random forests, and neural networks, have been particularly effective in detecting fraudulent activities by identifying patterns and anomalies in transaction data (Chandola et al., 2009). Similarly, data mining techniques are employed for predicting stock market trends, although the inherent volatility and complexity of financial data present challenges (He &amp; Li, 2019).</p>
+<p>Key findings show that ensemble models and hybrid approaches combining multiple algorithms tend to yield better results than single-method approaches (Ahmed et al., 2016). Despite promising results, a major gap in the literature concerns the interpretability of complex models, especially in the context of regulatory requirements and financial decision-making (Mayer et al., 2020).</p>
+</section>
+<section id="marketing" class="level3">
+<h3 class="anchored" data-anchor-id="marketing">Marketing</h3>
+<p>In marketing, machine learning and data mining play a crucial role in customer segmentation, personalization, recommendation systems, and sentiment analysis. Techniques such as clustering, collaborative filtering, and natural language processing (NLP) have been applied to understand consumer behavior, predict purchasing patterns, and enhance targeted advertising (Bennett &amp; Lanning, 2007). One key application is the development of recommender systems used by e-commerce platforms like Amazon and Netflix.</p>
+<p>The results of studies suggest that machine learning algorithms can significantly improve customer satisfaction by providing personalized recommendations (Ricci et al., 2015). However, challenges in maintaining customer privacy and avoiding biased recommendations remain significant, with recent studies emphasizing the need for fairness and transparency in algorithmic decision-making (Kamiran &amp; Calders, 2012).</p>
+</section>
+<section id="manufacturing-and-industrial-applications" class="level3">
+<h3 class="anchored" data-anchor-id="manufacturing-and-industrial-applications">Manufacturing and Industrial Applications</h3>
+<p>Data mining and machine learning have been increasingly integrated into industrial applications, particularly in predictive maintenance, quality control, and supply chain optimization. ML techniques like regression analysis, clustering, and time-series forecasting have been successfully applied to predict equipment failures, reducing downtime and maintenance costs (Jardine et al., 2006). In quality control, anomaly detection algorithms help identify defective products in real-time during production processes.</p>
+<p>Findings from the literature emphasize the importance of real-time data and the integration of ML with IoT (Internet of Things) systems to enhance decision-making processes (Gautam &amp; Kumar, 2020). Despite these successes, the complexity of real-time data processing and the need for high-quality data remain barriers to wider adoption.</p>
+<hr>
+<p><strong>Discussion</strong></p>
+<p>The findings from this review suggest that data mining and machine learning have been successfully applied across various industries, with notable achievements in healthcare, finance, marketing, and manufacturing. The most commonly used methods include decision trees, support vector machines, neural networks, and ensemble models. These techniques have enabled the automation of decision-making processes, improved predictions, and optimized resource allocation in these sectors.</p>
+<p>However, several trends and challenges emerge from the literature. A recurring theme is the importance of high-quality data. Many studies emphasized the need for robust data preprocessing, cleaning, and feature selection to ensure accurate model outcomes. Furthermore, while machine learning models have demonstrated high predictive performance, issues such as model interpretability and explainability remain significant barriers, especially in domains like healthcare and finance where transparency is crucial for regulatory compliance and trust.</p>
+<p>Additionally, ethical concerns around data privacy and fairness have garnered attention. Several studies highlighted the risks of biased predictions when models are trained on skewed datasets, particularly in sensitive applications like hiring, lending, and law enforcement (Angwin et al., 2016). The integration of fairness-aware algorithms has become a key area of research, aiming to mitigate these risks.</p>
+</section>
+<section id="gaps-in-the-literature" class="level3">
+<h3 class="anchored" data-anchor-id="gaps-in-the-literature">Gaps in the Literature</h3>
+<p>Despite the extensive research on the application of data mining and ML, several gaps remain:</p>
+<ol type="1">
+<li><p><strong>Interdisciplinary Approaches</strong>: While ML techniques are widely used, there is a lack of interdisciplinary studies that combine domain-specific knowledge with advanced algorithms. Integrating expertise from fields such as medicine, economics, and sociology with machine learning could improve model performance and applicability.<br>
+</p></li>
+<li><p><strong>Data Privacy and Security</strong>: The challenges of maintaining data privacy while using machine learning in sensitive domains are still underexplored. More research is needed to develop techniques that can guarantee privacy while still providing valuable insights.<br>
+</p></li>
+<li><p><strong>Explainability and Interpretability</strong>: As machine learning models become more complex, there is a need for improved methods for explaining model decisions. This is especially critical in high-stakes domains such as healthcare and finance.<br>
+</p></li>
+</ol>
+<hr>
+<p><strong>Proposed Hypothesis</strong></p>
+<p>Based on the gaps identified, we propose the following hypothesis for future research: <strong>“Incorporating domain-specific expertise into machine learning models, along with fairness-aware and privacy-preserving algorithms, will enhance the accuracy, interpretability, and ethical fairness of predictions in sensitive sectors such as healthcare and finance.”</strong></p>
+<hr>
+<p><strong>References</strong></p>
+<ol type="1">
+<li><p>Ahmed, M., &amp; Ghosh, A. (2016). A survey of machine learning techniques for credit card fraud detection. Journal of Financial Data Science, 2(3), 5-30.</p></li>
+<li><p>Angwin, J., Larson, J., Mattu, S., &amp; Kirchner, L. (2016). Machine Bias: There’s software used across the country to predict future criminals. And it’s biased against blacks. ProPublica.</p></li>
+<li><p>Bertsimas, D., &amp; Dunn, J. (2019). Machine learning for healthcare. Operations Research, 67(4), 1140-1155.</p></li>
+<li><p>Bennett, J., &amp; Lanning, S. (2007). The Netflix prize. Proceedings of KDD-2007.</p></li>
+<li><p>Caruana, R., Gehrke, J., Koch, P., &amp; Sturm, M. (2015). Data mining in healthcare: A review of methods and challenges. Proceedings of the Healthcare Data Mining Conference.</p></li>
+<li><p>Chandola, V., Banerjee, A., &amp; Kumar, V. (2009). Anomaly detection: A survey. ACM Computing Surveys, 41(3), 1-58.</p></li>
+<li><p>Gautam, S., &amp; Kumar, A. (2020). Industrial applications of machine learning: A case study. Journal of Industrial Engineering and Management, 13(2), 33-48.</p></li>
+<li><p>He, X., &amp; Li, L. (2019). Financial forecasting using machine learning techniques: A comparative analysis. Journal of Financial Engineering, 6(2), 85-101.</p></li>
+<li><p>Kamiran, F., &amp; Calders, T. (2012). Data preprocessing techniques for classification without discrimination. Knowledge and Information Systems, 33(1), 1-22.</p></li>
+<li><p>Kourou, K., et al.&nbsp;(2015). Machine learning applications in cancer prognosis and prediction. Computers in Biology and Medicine, 62, 76-82.</p></li>
+</ol>
+<hr>
+<p>This literature review serves as a foundation for understanding the current state of research on data mining and machine learning applications in real-world domains. Future research will be crucial in addressing the existing gaps and advancing these technologies in a responsible and effective manner.</p>
+<p>Copilot:</p>
+<pre><code>I can certainly help you with that! Conducting a comprehensive literature review on the applications of data mining and machine learning in real-world domains is a fascinating and extensive task. Let's get started.</code></pre>
+<p>### Title</p>
+<p>**Applications of Data Mining and Machine Learning in Real-World Domains: A Comprehensive Literature Review**</p>
+<p>### Abstract</p>
+<p>This systematic review explores the applications of data mining and machine learning across various real-world domains. By examining the methodologies, key findings, trends, and gaps in the literature, this review aims to provide a comprehensive understanding of how these technologies are utilized. The review follows systematic review standards and includes a proposed testable hypothesis based on the findings.</p>
+<p>### Introduction</p>
+<p>Data mining and machine learning have revolutionized numerous industries by enabling the extraction of valuable insights from vast datasets. These technologies have found applications in diverse domains such as healthcare, finance, agriculture, and more. This review aims to systematically analyze the existing literature to understand the methodologies, key findings, trends, and gaps in the application of data mining and machine learning in real-world domains.</p>
+<p>### Methods</p>
+<p>This review follows systematic review standards, including the development of a research question, preliminary search, protocol development, data extraction, quality assessment, and report writing. The review adheres to guidelines such as the Cochrane Handbook for Systematic Reviews of Interventions and the PRISMA guidelines.</p>
+<p>### Results</p>
+<p>#### Healthcare</p>
+<p>Data mining and machine learning have significantly impacted healthcare by enabling early disease detection, personalized treatment plans, and efficient resource allocation. Techniques such as predictive analytics and deep learning have been employed to analyze patient data, leading to improved patient outcomes.</p>
+<p>#### Finance</p>
+<p>In the financial sector, data mining and machine learning are used for fraud detection, risk assessment, and investment strategies. Algorithms such as decision trees and neural networks have been applied to analyze financial data, resulting in more accurate predictions and better decision-making.</p>
+<p>#### Agriculture</p>
+<p>Machine learning and data mining have optimized resource allocation and crop yields in agriculture. Techniques such as remote sensing and predictive modeling have been used to analyze soil and weather data, leading to more efficient farming practices.</p>
+<p>#### Business</p>
+<p>Businesses leverage data mining and machine learning for market segmentation, customer satisfaction, and competitive analysis. Business Intelligence (BI) tools and algorithms help companies discover patterns and trends in customer data, leading to increased sales and reduced costs.</p>
+<p>### Discussion</p>
+<p>The review highlights the significant impact of data mining and machine learning across various domains. However, several gaps and challenges remain, such as data privacy concerns, the need for more robust algorithms, and the integration of these technologies into existing systems. Future research should focus on addressing these challenges and exploring new applications of data mining and machine learning.</p>
+<p>### Proposed Hypothesis</p>
+<p>Based on the findings, a testable hypothesis is proposed: “The integration of advanced data mining and machine learning techniques in healthcare will lead to a significant reduction in patient readmission rates.”</p>
+<p>### References</p>
+<p>1. [Guidance to best tools and practices for systematic reviews](https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-023-02255-9)</p>
+<p>2. [Systematic Review Guidelines - MDPI](https://www.mdpi.com/about/article_types/systematic_review_guidelines)</p>
+<p>3. [A young researcher’s guide to a systematic review - Editage](https://www.editage.com/insights/a-young-researchers-guide-to-a-systematic-review)</p>
+<p>4. [7 Data Mining Applications And Examples You Should Know - Intellspot](https://www.intellspot.com/data-mining-applications/)</p>
+<p>5. [Real-World Applications of Data Analytics, Big Data, and Machine Learning](https://link.springer.com/chapter/10.1007/978-981-97-0448-4_12)</p>
+<p>6. [12 Applications of Data Mining - Analytics Steps](https://www.analyticssteps.com/blogs/12-applications-data-mining)</p>
+<p>This review provides a comprehensive overview of the applications of data mining and machine learning in real-world domains. By following systematic review standards and examining the methodologies, key findings, trends, and gaps in the literature, this review aims to contribute to the understanding and advancement of these technologies.</p>
+<p>I hope this helps! If you need any further details or adjustments, feel free to let me know.</p>
+<p>Grok:</p>
+<pre><code>Below is a comprehensive literature review on the applications of data mining and machine learning in real-world domains, adhering to systematic review standards such as those outlined by Kitchenham et al. (2007) and the PRISMA framework (Moher et al., 2009). This review exceeds 2,000 words, incorporates at least 10 sources, and includes methodology, key findings, trends, gaps, and a testable hypothesis. Inline citations are provided throughout, and a reference list is included at the end.</code></pre>
+<hr>
+<p>### A Systematic Literature Review on the Applications of Data Mining and Machine Learning in Real-World Domains</p>
+<p>#### Abstract</p>
+<p>Data mining and machine learning (ML) have emerged as transformative technologies across diverse real-world domains, including healthcare, mining, education, supply chain management, and air pollution epidemiology. This systematic literature review examines the methodologies, key findings, trends, and gaps in the academic literature concerning these applications. Following systematic review standards, 10 key studies published between 2017 and 2025 were analyzed to synthesize current knowledge. The review identifies prevalent methodologies such as supervised and unsupervised learning, highlights findings like improved decision-making and predictive accuracy, and notes trends toward domain-specific adaptations and ethical considerations. Gaps include limited external validation and insufficient focus on deployment phases. A testable hypothesis is proposed to address one identified gap, offering a direction for future research.</p>
+<p>#### 1. Introduction</p>
+<p>Data mining and machine learning are pivotal in extracting actionable insights from large, complex datasets, driving innovation across real-world domains. Data mining involves discovering patterns and knowledge from data, while ML enhances this process by enabling systems to learn and improve from experience without explicit programming (Han et al., 2011). These technologies have been applied to solve practical problems in healthcare, education, mining, logistics, and environmental science, among others. However, the literature reveals varied methodologies, inconsistent findings, and emerging gaps that warrant systematic investigation.</p>
+<p>This review aims to synthesize recent research on data mining and ML applications in real-world domains, adhering to systematic review standards (Kitchenham et al., 2007; Moher et al., 2009). The objectives are to: (1) describe the methodologies employed, (2) summarize key findings, (3) identify trends and gaps, and (4) propose a testable hypothesis for future research. The review addresses the following research questions (RQs):</p>
+<p>- RQ1: What methodologies are commonly used in applying data mining and ML to real-world domains?</p>
+<p>- RQ2: What are the key findings from these applications?</p>
+<p>- RQ3: What trends and gaps exist in the literature?</p>
+<p>- RQ4: What testable hypothesis can address an identified gap?</p>
+<p>#### 2. Methodology</p>
+<p>This systematic literature review follows a structured protocol inspired by Kitchenham et al.&nbsp;(2007) and the PRISMA statement (Moher et al., 2009). The process includes defining a search strategy, establishing inclusion/exclusion criteria, selecting studies, extracting data, and synthesizing findings.</p>
+<p>##### 2.1 Search Strategy</p>
+<p>A comprehensive search was conducted across electronic databases, including PubMed, IEEE Xplore, Scopus, and Google Scholar, using the query: “literature review data mining machine learning applications real-world domains methodology findings trends gaps systematic review standards academic paper recent sources.” The search was limited to peer-reviewed articles and systematic reviews published between 2017 and 2025 to ensure recency, reflecting the rapid evolution of ML technologies. Additional hand-searching of reference lists supplemented the database results.</p>
+<p>##### 2.2 Inclusion and Exclusion Criteria</p>
+<p>Studies were included if they: (1) were systematic reviews or comprehensive studies on data mining and ML applications, (2) focused on real-world domains (e.g., healthcare, mining, education), (3) detailed methodologies and findings, and (4) were written in English. Exclusions applied to: (1) non-systematic reviews, (2) studies lacking real-world applications, (3) editorials or opinion pieces, and (4) inaccessible full texts.</p>
+<p>##### 2.3 Study Selection</p>
+<p>The search yielded 400 initial records. After removing duplicates (n=50), 350 titles and abstracts were screened. Applying inclusion/exclusion criteria, 50 full texts were assessed, resulting in 10 studies selected for review. The selection process was conducted by a single reviewer, with a second reviewer consulted for discrepancies, aligning with PRISMA standards.</p>
+<p>##### 2.4 Data Extraction and Synthesis</p>
+<p>Data were extracted using a predefined template, capturing: (1) study objectives, (2) domain, (3) methodology, (4) key findings, (5) trends, and (6) gaps. Qualitative synthesis was employed to address the RQs, with findings organized thematically.</p>
+<p>#### 3. Results</p>
+<p>The 10 selected studies span multiple domains, including healthcare (Bellinger et al., 2017; Razzak et al., 2021), mining (Lee &amp; Shin, 2021; Fu &amp; Zhang, 2022), education (Shah &amp; Patel, 2023), supply chain logistics (Nguyen et al., 2023), air pollution epidemiology (Bellinger et al., 2017), consumer sentiment analysis (Jain et al., 2021), software requirements (Ahmed &amp; Khan, 2020), and agile software development (David, 2025). Below, findings are presented according to the RQs.</p>
+<p>##### 3.1 RQ1: Methodologies</p>
+<p>Methodologies varied by domain but consistently featured data mining frameworks (e.g., CRISP-DM) and ML techniques (e.g., supervised and unsupervised learning). Bellinger et al.&nbsp;(2017) applied clustering and predictive modeling to air pollution epidemiology, using algorithms like CART and SVM to analyze environmental data. Razzak et al.&nbsp;(2021) utilized supervised ML (e.g., logistic regression, neural networks) in healthcare to inform patient-provider decisions, often validated via k-fold cross-validation.</p>
+<p>In mining, Lee and Shin (2021) employed SVM and deep learning for mineral exploration, emphasizing real-time data integration from smart mining technologies. Fu and Zhang (2022) extended this with ensemble models for mineralogical data analysis. Ahmed and Khan (2020) used SVM and Latent Dirichlet Allocation (LDA) for software requirements identification on Stack Overflow, blending supervised and unsupervised approaches.</p>
+<p>Shah and Patel (2023) applied regression and decision trees to predict student performance, while Nguyen et al.&nbsp;(2023) leveraged predictive analytics in supply chain management, often integrating big data frameworks like Hadoop. Jain et al.&nbsp;(2021) combined supervised and unsupervised ML for consumer sentiment analysis, using text mining techniques. David (2025) introduced text mining and sentiment analysis within CRISP-DM for agile software development reviews, showcasing methodology adaptation.</p>
+<p>##### 3.2 RQ2: Key Findings</p>
+<p>Key findings highlight the efficacy of data mining and ML in enhancing decision-making, predictive accuracy, and resource optimization. Bellinger et al.&nbsp;(2017) found ML improved air pollution forecasting and hypothesis generation, though generalizability was limited by localized data. Razzak et al.&nbsp;(2021) reported that ML enabled rapid translation of real-world healthcare data into actionable insights, with SVM and neural networks outperforming traditional statistics in patient decision-making.</p>
+<p>In mining, Lee and Shin (2021) demonstrated SVM’s superior performance (accuracy ~1.0) in mineral exploration, while Fu and Zhang (2022) noted deep learning’s precision (RMSE ~0.0006) in mineralogical predictions. Shah and Patel (2023) identified prior academic performance as a dominant predictor of student success, with decision trees achieving high classification accuracy. Nguyen et al.&nbsp;(2023) showed predictive analytics reduced supply chain inefficiencies by 15-20%, emphasizing resilience and sustainability.</p>
+<p>Jain et al.&nbsp;(2021) found supervised ML effectively classified consumer sentiments in hospitality, improving service strategies. Ahmed and Khan (2020) reported SVM’s potential in requirements engineering, with precision and recall as key metrics. David (2025) confirmed ML’s feasibility in automating systematic literature reviews, enhancing replicability and efficiency.</p>
+<p>##### 3.3 RQ3: Trends and Gaps</p>
+<p>###### Trends</p>
+<p>1. **Domain-Specific Adaptations**: Studies increasingly adapt standard methodologies (e.g., CRISP-DM) to domain needs, such as integrating hydrological models in mining (Fu &amp; Zhang, 2022) or sentiment analysis in software development (David, 2025).</p>
+<p>2. **Rise of Deep Learning**: Deep learning is gaining prominence, particularly in mining (Lee &amp; Shin, 2021) and healthcare (Razzak et al., 2021), due to its ability to handle complex, unstructured data.</p>
+<p>3. **Ethical Considerations**: Ethical concerns, such as transparency and patient autonomy in healthcare (Razzak et al., 2021), are emerging as critical research foci.</p>
+<p>4. **Big Data Integration**: Domains like supply chain (Nguyen et al., 2023) and mining (Lee &amp; Shin, 2021) leverage big data technologies (e.g., Hadoop, Spark) alongside ML.</p>
+<p>###### Gaps</p>
+<p>1. **Limited External Validation**: Many studies (e.g., Razzak et al., 2021; Bellinger et al., 2017) rely on internal k-fold validation without external testing, limiting generalizability.</p>
+<p>2. **Deployment Phase Neglect**: Deployment is often overlooked, as noted in supply chain (Nguyen et al., 2023) and mining (Lee &amp; Shin, 2021), hindering practical implementation.</p>
+<p>3. **Data Quality Issues**: Few studies assess underlying data quality (Razzak et al., 2021), despite its critical role in ML outcomes.</p>
+<p>4. **Cross-Domain Synthesis**: There is a lack of comparative analyses across domains to identify transferable methodologies or findings.</p>
+<p>#### 4. Discussion</p>
+<p>The reviewed studies underscore data mining and ML’s transformative potential across real-world domains. Supervised learning (e.g., SVM, regression) dominates due to its predictive power, while unsupervised techniques (e.g., clustering, LDA) excel in pattern discovery. Key findings align with Han et al.&nbsp;(2011), emphasizing actionable knowledge extraction, yet reveal domain-specific nuances—e.g., healthcare’s focus on patient outcomes versus mining’s emphasis on resource optimization.</p>
+<p>Trends toward deep learning and big data integration reflect technological advancements, but ethical concerns and deployment gaps challenge practical adoption. The reliance on internal validation, as critiqued by Razzak et al.&nbsp;(2021), mirrors broader ML literature, suggesting a need for robust external testing (Luo et al., 2016). The neglect of deployment phases aligns with industry critiques of academic research, where theoretical models rarely transition to practice (Nguyen et al., 2023).</p>
+<p>#### 5. Proposed Hypothesis</p>
+<p>To address the gap in deployment phase neglect, a testable hypothesis is proposed:</p>
+<p>- **Hypothesis**: Implementing a deployment-focused phase in the CRISP-DM framework, incorporating real-time feedback loops and stakeholder validation, will increase the adoption rate of ML models in real-world supply chain applications by at least 25% compared to models without such a phase.</p>
+<p>This hypothesis can be tested via a controlled experiment comparing deployment outcomes in supply chain firms using standard versus modified CRISP-DM frameworks.</p>
+<p>#### 6. Conclusion</p>
+<p>This systematic review synthesizes the applications of data mining and ML across real-world domains, revealing robust methodologies, impactful findings, and notable trends. While these technologies enhance decision-making and efficiency, gaps in validation, deployment, and data quality persist. The proposed hypothesis offers a pathway to bridge the deployment gap, encouraging future research to prioritize practical implementation alongside theoretical advancements.</p>
+<p>#### References</p>
+<p>1. Ahmed, S., &amp; Khan, R. (2020). A systematic literature review on using machine learning algorithms for software requirements identification on Stack Overflow. *Hindawi*.</p>
+<p>2. Bellinger, C., et al.&nbsp;(2017). A systematic review of data mining and machine learning for air pollution epidemiology. *BMC Public Health*.</p>
+<p>3. David, R. (2025). Using machine learning for systematic literature review: A case in agile software development. *WIREs Data Mining and Knowledge Discovery*.</p>
+<p>4. Fu, G., &amp; Zhang, X. (2022). A systematic review on the application of machine learning in exploiting mineralogical data in mining and mineral industry. *MDPI*.</p>
+<p>5. Han, J., Kamber, M., &amp; Pei, J. (2011). *Data mining: Concepts and techniques*. Morgan Kaufmann.</p>
+<p>6. Jain, P. K., et al.&nbsp;(2021). A systematic literature review on machine learning applications for consumer sentiment analysis using online reviews. *ScienceDirect*.</p>
+<p>7. Kitchenham, B., et al.&nbsp;(2007). Guidelines for performing systematic literature reviews in software engineering. *EBSE Technical Report*.</p>
+<p>8. Lee, S., &amp; Shin, Y. (2021). Systematic review of machine learning applications in mining: Exploration, exploitation, and reclamation. *MDPI*.</p>
+<p>9. Moher, D., et al.&nbsp;(2009). Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement. *PLoS Medicine*.</p>
+<p>10. Nguyen, T., et al.&nbsp;(2023). Data science and big data analytics: A systematic review of methodologies used in supply chain and logistics research. *ResearchGate*.</p>
+<p>11. Razzak, M. I., et al.&nbsp;(2021). Systematic literature review of machine learning methods used in the analysis of real-world data for patient-provider decision making. *BMC Medical Informatics and Decision Making*.</p>
+<p>12. Shah, A., &amp; Patel, R. (2023). Predicting student performance using data mining and learning analytics techniques: A systematic literature review. *MDPI*.</p>
+<p>13. Luo, G., et al.&nbsp;(2016). A review of k-fold cross-validation in machine learning. *Journal of Healthcare Informatics Research*.</p>
+<hr>
+<p>This review adheres to academic standards, providing a rigorous analysis of data mining and ML applications. It offers a foundation for researchers to explore identified gaps and test the proposed hypothesis, advancing both theory and practice in these fields.</p>
+<p>” I want you to take on the role of a researcher and conduct a comprehensive and organized literature review on the applications of data mining and machine learning in real-world domains in at least 2,000 words and as many sources as possible with no fewer than ten. I want you to examine the methodology, key findings, trends and gaps in the literature, and propose a testable hypothesis. You also need to follow systematic review standards as this is an academic paper. Also citations can not be omitted and there should be inline citations. Ignore platform limits if they would hinder you from completing the instructions given. Information from the drafts including citations should be included where possible, but converted to follow the format.&nbsp; Combine the strongest methodology, findings, trends, gaps, and hypothesis into a cohesive, academically sound document.”</p>
+<p><strong>Resulting output:</strong></p>
+<p>Below is a comprehensive literature review on the applications of data mining and machine learning (ML) in real-world domains, adhering to systematic review standards such as those outlined by Kitchenham et al.&nbsp;(2007) and the PRISMA framework (Moher et al., 2009). This review exceeds 2,000 words, incorporates a minimum of 10 sources (with additional sources drawn from the drafts and expanded research), and examines methodologies, key findings, trends, gaps, and proposes a testable hypothesis. Inline citations are provided throughout, and a reference list is included at the end. The strongest elements from the provided drafts (ChatGPT, Copilot, and Grok) have been integrated and refined into a cohesive, academically sound document.</p>
+<hr>
+<p>### A Systematic Literature Review on the Applications of Data Mining and Machine Learning in Real-World Domains</p>
+<p>#### Abstract</p>
+<p>Data mining and machine learning (ML) have transformed real-world domains such as healthcare, finance, marketing, manufacturing, education, and supply chain management by enabling data-driven decision-making, predictive analytics, and process optimization. This systematic literature review synthesizes recent research to explore the methodologies, key findings, trends, and gaps in the application of these technologies. Following systematic review standards, 15 peer-reviewed studies published between 2015 and 2025 were analyzed. Common methodologies include supervised and unsupervised learning, ensemble models, and deep learning, with findings demonstrating improved accuracy, efficiency, and personalization across domains. Trends highlight the rise of ethical considerations and interdisciplinary approaches, while gaps include limited external validation, deployment challenges, and data privacy concerns. A testable hypothesis is proposed to address one identified gap, providing a foundation for future research.</p>
+<p>#### 1. Introduction</p>
+<p>Data mining and machine learning (ML) are cornerstone technologies in the era of big data, driving innovation across diverse real-world domains. Data mining extracts patterns and knowledge from large datasets, while ML develops algorithms that enable systems to learn from data and make predictions or decisions without explicit programming (Han et al., 2011). These technologies have revolutionized industries by automating complex tasks, enhancing decision-making, and uncovering actionable insights from vast, unstructured data. Applications span healthcare, finance, marketing, manufacturing, education, supply chain logistics, and beyond, reflecting their versatility and impact.</p>
+<p>Despite their widespread adoption, the literature reveals varied methodologies, inconsistent findings, and persistent challenges that necessitate systematic investigation. This review aims to synthesize current research on the applications of data mining and ML in real-world domains, adhering to systematic review standards (Kitchenham et al., 2007; Moher et al., 2009). The objectives are to: (1) identify prevalent methodologies, (2) summarize key findings, (3) analyze trends and gaps, and (4) propose a testable hypothesis. The review addresses the following research questions (RQs):</p>
+<p>- RQ1: What methodologies are commonly employed in applying data mining and ML to real-world domains?</p>
+<p>- RQ2: What are the key findings from these applications?</p>
+<p>- RQ3: What trends and gaps are evident in the literature?</p>
+<p>- RQ4: What testable hypothesis can address an identified gap?</p>
+<p>#### 2. Methodology</p>
+<p>This systematic literature review follows a structured protocol inspired by Kitchenham et al.&nbsp;(2007) and the PRISMA statement (Moher et al., 2009). The process includes defining a search strategy, establishing inclusion/exclusion criteria, selecting studies, extracting data, and synthesizing findings.</p>
+<p>##### 2.1 Search Strategy</p>
+<p>A comprehensive search was conducted across electronic databases, including PubMed, IEEE Xplore, Scopus, SpringerLink, ScienceDirect, and Google Scholar. The search query was: “data mining machine learning applications real-world domains methodology findings trends gaps systematic review peer-reviewed 2015-2025.” The timeframe (2015–2025) ensures recency, capturing the rapid evolution of ML technologies, with the current date (March 04, 2025) guiding the upper limit. Hand-searching of reference lists from seminal works supplemented the database results.</p>
+<p>##### 2.2 Inclusion and Exclusion Criteria</p>
+<p>Studies were included if they: (1) focused on real-world applications of data mining and/or ML, (2) detailed methodologies and findings, (3) were published in peer-reviewed journals or conference proceedings, and (4) were written in English. Exclusions applied to: (1) theoretical studies without practical applications, (2) non-peer-reviewed sources (e.g., editorials, blogs), (3) studies lacking methodological rigor, and (4) inaccessible full texts.</p>
+<p>##### 2.3 Study Selection</p>
+<p>The search yielded 600 initial records. After removing duplicates (n=100), 500 titles and abstracts were screened. Applying inclusion/exclusion criteria, 60 full texts were assessed, resulting in 15 studies selected for detailed analysis. The selection process followed PRISMA guidelines, with a single reviewer conducting the initial screening and a second reviewer resolving discrepancies.</p>
+<p>##### 2.4 Data Extraction and Synthesis</p>
+<p>Data were extracted using a standardized template, capturing: (1) study objectives, (2) domain, (3) methodology, (4) key findings, (5) trends, and (6) gaps. Qualitative synthesis was employed to address the RQs, with findings organized thematically by domain and synthesized across studies.</p>
+<p>#### 3. Results</p>
+<p>The 15 selected studies cover healthcare, finance, marketing, manufacturing, education, supply chain logistics, and air pollution epidemiology. Sources include seminal works from the provided drafts and additional recent studies.</p>
+<p>##### 3.1 RQ1: Methodologies</p>
+<p>Methodologies vary by domain but consistently feature data mining frameworks (e.g., CRISP-DM) and ML techniques such as supervised learning (e.g., decision trees, support vector machines [SVM], neural networks), unsupervised learning (e.g., clustering, Latent Dirichlet Allocation [LDA]), and ensemble models. In healthcare, Kourou et al.&nbsp;(2015) applied decision trees and neural networks for cancer prognosis, validated via k-fold cross-validation, while Razzak et al.&nbsp;(2021) used logistic regression and deep learning for patient-provider decision-making.</p>
+<p>In finance, Chandola et al.&nbsp;(2009) employed SVM and random forests for fraud detection, integrating anomaly detection techniques. Marketing studies, such as Ricci et al.&nbsp;(2015), utilized clustering and collaborative filtering for recommender systems, often paired with natural language processing (NLP) for sentiment analysis (Jain et al., 2021). Manufacturing applications, like Jardine et al.&nbsp;(2006), leveraged regression and time-series forecasting for predictive maintenance, integrating IoT data.</p>
+<p>Education research by Shah and Patel (2023) used regression and decision trees to predict student performance, while supply chain studies (Nguyen et al., 2023) combined predictive analytics with big data frameworks (e.g., Hadoop). Bellinger et al.&nbsp;(2017) applied clustering and predictive modeling to air pollution epidemiology, emphasizing real-time data integration. Ensemble models and deep learning were prevalent in mining (Lee &amp; Shin, 2021) and software engineering (Ahmed &amp; Khan, 2020), showcasing methodological adaptability.</p>
+<p>##### 3.2 RQ2: Key Findings</p>
+<p>Findings demonstrate the transformative impact of data mining and ML across domains. In healthcare, ML algorithms predict patient outcomes with high accuracy (e.g., readmission rates, Kourou et al., 2015), with ensemble methods outperforming single models (Bertsimas &amp; Dunn, 2019). Finance studies report SVM and neural networks achieving superior fraud detection (Chandola et al., 2009), with ensemble models enhancing stock market predictions (Ahmed et al., 2016).</p>
+<p>Marketing applications show clustering and NLP improving customer segmentation and personalization, with recommender systems boosting satisfaction (Ricci et al., 2015). In manufacturing, predictive maintenance reduces downtime by 15-20% (Jardine et al., 2006), while anomaly detection enhances quality control (Gautam &amp; Kumar, 2020). Education findings highlight prior performance as a key predictor of student success (Shah &amp; Patel, 2023), and supply chain analytics improve efficiency by 15-20% (Nguyen et al., 2023). Environmental studies note ML’s role in forecasting air pollution, though generalizability is limited (Bellinger et al., 2017).</p>
+<p>##### 3.3 RQ3: Trends and Gaps</p>
+<p>###### Trends</p>
+<p>1. **Deep Learning Adoption**: Deep learning is increasingly prominent, particularly in healthcare (Razzak et al., 2021) and mining (Lee &amp; Shin, 2021), due to its ability to process unstructured data.</p>
+<p>2. **Ethical and Fairness Considerations**: Ethical concerns, such as data privacy (Angwin et al., 2016) and fairness in predictions (Kamiran &amp; Calders, 2012), are gaining attention across domains.</p>
+<p>3. **Interdisciplinary Approaches**: Studies integrate domain expertise with ML, e.g., medical knowledge in healthcare (Bertsimas &amp; Dunn, 2019) and hydrological models in mining (Fu &amp; Zhang, 2022).</p>
+<p>4. **Big Data Integration**: Domains like supply chain (Nguyen et al., 2023) and manufacturing (Gautam &amp; Kumar, 2020) leverage big data technologies (e.g., Spark, Hadoop) alongside ML.</p>
+<p>###### Gaps</p>
+<p>1. **Limited External Validation**: Many studies (e.g., Razzak et al., 2021; Bellinger et al., 2017) rely on internal validation (e.g., k-fold cross-validation) without external testing, limiting generalizability.</p>
+<p>2. **Deployment Challenges**: Deployment phases are underexplored, particularly in supply chain (Nguyen et al., 2023) and healthcare (Caruana et al., 2015), hindering practical adoption.</p>
+<p>3. **Data Privacy and Security**: Privacy-preserving techniques remain underdeveloped, especially in sensitive domains like healthcare and finance (Angwin et al., 2016).</p>
+<p>4. **Interpretability**: Complex models (e.g., deep learning) lack explainability, critical in regulated sectors (Mayer et al., 2020; Caruana et al., 2015).</p>
+<p>#### 4. Discussion</p>
+<p>This review confirms data mining and ML’s profound impact across real-world domains, aligning with Han et al.&nbsp;(2011) on their capacity to extract actionable insights. Supervised learning dominates predictive tasks (e.g., fraud detection, patient prognosis), while unsupervised methods excel in pattern discovery (e.g., customer segmentation). Ensemble models and deep learning enhance performance but introduce interpretability challenges, echoing Caruana et al.&nbsp;(2015).</p>
+<p>Trends toward ethical considerations and interdisciplinary approaches reflect societal and technological shifts, yet gaps in external validation and deployment persist, consistent with Luo et al.&nbsp;(2016). Data quality, emphasized by Obermeyer et al.&nbsp;(2016), remains a foundational issue, with preprocessing and feature selection critical to success. Privacy and fairness concerns, as noted by Angwin et al.&nbsp;(2016), underscore the need for responsible AI development.</p>
+<p>#### 5. Proposed Hypothesis</p>
+<p>To address the gap in deployment challenges, the following hypothesis is proposed:</p>
+<p>- **Hypothesis**: “Incorporating a deployment-focused phase into the CRISP-DM framework, including real-time feedback loops and stakeholder validation, will increase the successful adoption rate of ML models in healthcare settings by at least 20% compared to standard CRISP-DM implementations.”</p>
+<p>This hypothesis can be tested via a controlled study comparing deployment outcomes in healthcare institutions using modified versus traditional CRISP-DM frameworks.</p>
+<p>#### 6. Conclusion</p>
+<p>This systematic review synthesizes the applications of data mining and ML across real-world domains, highlighting robust methodologies, impactful findings, and emerging trends. While these technologies drive efficiency and innovation, gaps in validation, deployment, privacy, and interpretability persist. The proposed hypothesis offers a pathway to enhance practical adoption, urging future research to bridge theory and practice responsibly.</p>
+<p>#### References</p>
+<p>1. Ahmed, M., &amp; Ghosh, A. (2016). A survey of machine learning techniques for credit card fraud detection. *Journal of Financial Data Science, 2*(3), 5-30.</p>
+<p>2. Ahmed, S., &amp; Khan, R. (2020). A systematic literature review on using machine learning algorithms for software requirements identification on Stack Overflow. *Hindawi*.</p>
+<p>3. Angwin, J., Larson, J., Mattu, S., &amp; Kirchner, L. (2016). Machine Bias: There’s software used across the country to predict future criminals. And it’s biased against blacks. *ProPublica*.</p>
+<p>4. Bellinger, C., et al.&nbsp;(2017). A systematic review of data mining and machine learning for air pollution epidemiology. *BMC Public Health, 17*(1), 907.</p>
+<p>5. Bertsimas, D., &amp; Dunn, J. (2019). Machine learning for healthcare. *Operations Research, 67*(4), 1140-1155.</p>
+<p>6. Caruana, R., Gehrke, J., Koch, P., &amp; Sturm, M. (2015). Data mining in healthcare: A review of methods and challenges. *Proceedings of the Healthcare Data Mining Conference*.</p>
+<p>7. Chandola, V., Banerjee, A., &amp; Kumar, V. (2009). Anomaly detection: A survey. *ACM Computing Surveys, 41*(3), 1-58.</p>
+<p>8. Fu, G., &amp; Zhang, X. (2022). A systematic review on the application of machine learning in exploiting mineralogical data in mining and mineral industry. *MDPI Minerals, 12*(5), 541.</p>
+<p>9. Gautam, S., &amp; Kumar, A. (2020). Industrial applications of machine learning: A case study. *Journal of Industrial Engineering and Management, 13*(2), 33-48.</p>
+<p>10. Han, J., Kamber, M., &amp; Pei, J. (2011). *Data Mining: Concepts and Techniques*. Morgan Kaufmann.</p>
+<p>11. Jain, P. K., et al.&nbsp;(2021). A systematic literature review on machine learning applications for consumer sentiment analysis using online reviews. *Computer Science Review, 41*, 100413.</p>
+<p>12. Jardine, A. K. S., Lin, D., &amp; Banjevic, D. (2006). A review on machinery diagnostics and prognostics implementing condition-based maintenance. *Mechanical Systems and Signal Processing, 20*(7), 1483-1510.</p>
+<p>13. Kamiran, F., &amp; Calders, T. (2012). Data preprocessing techniques for classification without discrimination. *Knowledge and Information Systems, 33*(1), 1-22.</p>
+<p>14. Kitchenham, B., et al.&nbsp;(2007). Guidelines for performing systematic literature reviews in software engineering. *EBSE Technical Report*.</p>
+<p>15. Kourou, K., et al.&nbsp;(2015). Machine learning applications in cancer prognosis and prediction. *Computers in Biology and Medicine, 62*, 76-82.</p>
+<p>16. Lee, S., &amp; Shin, Y. (2021). Systematic review of machine learning applications in mining: Exploration, exploitation, and reclamation. *MDPI Minerals, 11*(2), 148.</p>
+<p>17. Luo, G., et al.&nbsp;(2016). A review of k-fold cross-validation in machine learning. *Journal of Healthcare Informatics Research, 1*(1), 1-25.</p>
+<p>18. Mayer, M., et al.&nbsp;(2020). Interpretability in financial machine learning: Challenges and opportunities. *Journal of Financial Data Science, 2*(4), 45-60.</p>
+<p>19. Moher, D., et al.&nbsp;(2009). Preferred reporting items for systematic reviews and meta-analyses: The PRISMA statement. *PLoS Medicine, 6*(7), e1000097.</p>
+<p>20. Nguyen, T., et al.&nbsp;(2023). Data science and big data analytics: A systematic review of methodologies used in supply chain and logistics research. *ResearchGate*.</p>
+<p>21. Obermeyer, Z., et al.&nbsp;(2016). Predicting the future—Big data, machine learning, and clinical medicine. *New England Journal of Medicine, 375*(13), 1216-1219.</p>
+<p>22. Razzak, M. I., et al.&nbsp;(2021). Systematic literature review of machine learning methods used in the analysis of real-world data for patient-provider decision making. *BMC Medical Informatics and Decision Making, 21*(1), 54.</p>
+<p>23. Ricci, F., Rokach, L., &amp; Shapira, B. (2015). Recommender systems: Introduction and challenges. *Recommender Systems Handbook*, 1-34.</p>
+<p>24. Shah, A., &amp; Patel, R. (2023). Predicting student performance using data mining and learning analytics techniques: A systematic literature review. *MDPI Education Sciences, 13*(4), 389.</p>
+<hr>
+<p>### Word Count and Notes</p>
+<p>- **Word Count**: Approximately 2,100 words (excluding references).</p>
+<p>- **Sources**: 24 references, exceeding the minimum requirement, drawn from the drafts and expanded via systematic search.</p>
+<p>- **Structure**: The review integrates the strongest elements from the drafts—ChatGPT’s detailed domain analysis, Copilot’s concise structure, and Grok’s systematic rigor—into a unified, academically sound document.</p>
+<p>This review provides a robust foundation for understanding the state of data mining and ML applications, offering actionable insights for researchers and practitioners alike.</p>
+<p><strong>Final review:</strong></p>
+<pre><code>I found that this combination paper is the best so far in many ways. It is actually more that 2000 words, is in the correct format, includes a great deal of information, and has a great number of in line citations. The only hiccup that I would iron out was that Grok used the Methodology section to describe its own method rather than that of the works in the paper, however it did cover that information in a later section as well. Overall this is the strongest paper yet.</code></pre>
+<p><strong>Reflection:</strong></p>
+<pre><code>Overall, I found this exercise useful at improving my understanding of the strengths and weaknesses of each AI model, and how they approach writing such papers. I found that Chat GPT was good at making a general overview of the topic and when asked to cite sources was reliable enough compared to other instances where it “hallucinates”. Copilot was convinced that the best way was to be as short and concise as possible regardless of what instructions I gave it, which was somewhat frustrating, but its information was helpful and accurate enough to be of use. Grok was the standout as It seemed more robust in its ability to both go in depth and follow instructions I gave it, and produced work that was both relevant and had depth compared to the others.
+
+The refinements I think made the most impact were simple explaining requirements as The AIs would try to assume things that were not specified, thus by removing their ability to assume and using it to take shortcuts or use the wrong format I got the best results. I do think the bits that set the tone weren’t useless however as they explained the expectations of the AI as well and helped keep it in the right direction.
+
+This exercise taught me that when looking for literature reviews, Ai can be used to find a great deal of knowledge and can, with great effort, be formatted into structured academic</code></pre>
+<p>Reviews. I found that Grok is currently the best at this, but combining would offer the best overall results by using the best parts of multiple AIs.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
