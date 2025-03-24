@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop AI Model Benchmarking – Logan Lomonaco</title>
+<title>Prepare for class 8 – Logan Lomonaco</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Workshop AI Model Benchmarking</h1>
+<h1 class="title">Prepare for class 8</h1>
 </div>
 
 
@@ -198,16 +198,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>My quick first impressions in class:</p>
-<p><strong>Accuracy:</strong></p>
-<pre><code>All of the AIs look to be accurate this time around, but only because they are citing articles with web access. I had to ask Claude for citations and it generated new text rather than add citation to existing text. Chat GPT does like to lie to you as I can attest to in the past, but It looks like when it is citing articles that it has to reference that is less likely, copilot looks to be citing the article accurately enough as it’s pulling live.</code></pre>
-<p><strong>Bias:</strong></p>
-<p>Chat GPT likes to cite financial articles like the wall street journal and smaller educational articles (not academic papers or research. But meant for informing the general public about new developments and research). Claude Likes to cite academic articles and research when prompted. Copilot Likes to cite mostly educational articles with a little financial mixed in.</p>
-<p><strong>Depth:</strong></p>
-<pre><code>Chat gpt gave a good general overview of the current advancements in data science with a series of financial articles and educational articles, but lacked academic papers and research for a proper deep dive. Claude did go in depth and focused on academic papers and research and cited them (but I had to ask for it on the version I had access to). Copilot was the least robust description of the topic, and cited mostly educational articles so out of the bunch I would say it had the least depth.</code></pre>
-<p><strong>Clarity:</strong></p>
-<pre><code>The way each AI is formatted, I find that Chat GPT is the most clear in writing style followed by copilot, then Claude. Claude seems to repeat itself and structures it’s citations in a jarring manner, Copilot has its citations at the end and is short and to the point, and Chat GPT is closest to a conversation of the three.&nbsp;</code></pre>
-<p>Overall, I would say that I found this exercise helpful as it shows that if one is to use AI in research, then they should be aware of the strengths and weaknesses of particular tools and AI is no different. In a workflow scenario it may be best to use something like Copilot or chat GPT with citations as a starting point to understand the gist of a topic, then move to Claude for more in depth research.</p>
+<p>The instructions indicated I was expected to use an AI model(s) for this work, so Grok was used to help with this task.</p>
+<p>Summary of the readings:</p>
+<p>A Survey of Large Language Models (ResearchGate, 2023) Overall this article highlights how LLMs built on Transformer architectures have evolved from traditional statistical and neural language models, to pre-trained models capable of solving complex NLP tasks. Knowledge Mining benefits from LLMs’ ability to extract structured information from unstructured text via pre-training on massive corpora, adaptation tuning (e.g., fine-tuning), and advanced utilization techniques (e.g., prompting). The paper emphasizes LLMs’ capacity to uncover latent knowledge patterns, such as factual extraction and reasoning, due to their scale and pre-training. Specific takeaways for Knowledge Mining are that LLMs enhance it by enabling semantic understanding, entity recognition, and relationship extraction at scale. Techniques like retrieval-augmented generation (RAG) further improve knowledge extraction by combining LLMs with external knowledge bases.</p>
+<p>A Survey on Evaluation of Large Language Models (ACM, 2024) Overall this article reviews evaluation methods for LLMs, focusing on dimensions like accuracy, robustness, and fairness in tasks such as question answering (QA) and code generation. It notes that LLMs like InstructGPT and ChatGPT outperform earlier models in extracting and synthesizing knowledge from diverse domains (e.g., social sciences, engineering). However, challenges like hallucination and limited general science performance indicate gaps in reliable knowledge mining. Specific takeaways for Knowledge Mining include the ability to evaluate LLMs on task-specific benchmarks (e.g., QA accuracy) shows their growing role in mining actionable insights. and robustness in out-of-distribution (OOD) scenarios remains a hurdle, impacting the reliability of mined knowledge.</p>
+<p>Recent Advances in Natural Language Processing via Large Pre-Trained Language Models (ResearchGate, 2021) Overall this article details how pre-trained language models (PLMs) like BERT and GPT have revolutionized NLP by leveraging unsupervised pre-training and fine-tuning. For Knowledge Mining, PLMs excel in tasks like closed-book QA, event extraction, and joint entity-relation extraction, reducing reliance on hand-crafted features. The paper highlights the shift from task-specific models to general-purpose models adaptable to mining tasks. A specific takeaway for Knowledge Mining is that PLMs provide a foundation for extracting structured knowledge (e.g., entities, relations) from raw text, with fine-tuning enabling domain-specific mining (e.g., biomedical, legal). Their scalability and adaptability mark a significant leap from earlier NLP approaches.</p>
+<p>Key Concepts &amp; terms:</p>
+<p>Pre-Training and Scale: LLMs leverage vast corpora and large parameter sizes (e.g., tens/hundreds of billions) to encode rich knowledge, enabling deeper mining of semantic and contextual information.</p>
+<p>Adaptation Techniques: Fine-tuning and prompting allow LLMs to specialize in Knowledge Mining tasks like entity extraction, relation detection, and QA, tailoring general knowledge to specific domains.</p>
+<p>Task Versatility: LLMs handle diverse mining tasks (e.g., QA, event extraction, sentiment analysis), shifting Knowledge Mining from narrow, rule-based systems to broad, data-driven approaches.</p>
+<p>Evaluation Metrics: Accuracy, robustness, and fairness metrics assess LLMs’ reliability in mining trustworthy knowledge, though issues like hallucination persist.</p>
+<p>Transformer Architecture: The backbone of LLMs, Transformers enable parallel processing and attention mechanisms critical for understanding complex text structures in Knowledge Mining.</p>
+<p>From Rule-Based to Data-Driven: Early NLP relied on statistical models and manual rules for Knowledge Mining (e.g., keyword matching). LLMs shift this to unsupervised learning, extracting knowledge from patterns in massive datasets.</p>
+<p>Semantic Understanding: LLMs capture context and meaning beyond surface-level text, improving entity recognition, relation extraction, and factual synthesis.</p>
+<p>Scalability: Larger models (e.g., GPT-3, ChatGPT) mine knowledge from diverse, unstructured sources at unprecedented scales, surpassing smaller PLMs like BERT.</p>
+<p>Domain Adaptation: Fine-tuning and prompting make LLMs adaptable to specialized fields (e.g., medicine, engineering), enhancing domain-specific knowledge extraction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="knowledge_map.png" class="img-fluid figure-img"></p>
+<figcaption>knowledge_map</figcaption>
+</figure>
+</div>
+<p>Prepare for discussion:</p>
+<ol type="a">
+<li><p>How NLP and LLM can assist in your research and provide data/assistance for your project? Give specific examples.</p>
+<p>NLP and LLM could be used to better process raw data such as social media posts, internet searches, or other text based data in order to be used in my research on finding correlations between negative comments relevant to inflation. This serves to both clean the data by filtering out the majority of unrelated information, and to reorganize the relevant data into categories such as by location, time, date, and by good (match it up with CPI goods)</p></li>
+<li><p>Name limitations and suggest solutions:</p>
+<p>Access to relevant data could be an issue as many social media sites have moved to restrict 3rd party access in recent years. Solution would be to limit analysis to more accessible forms such as google analytics of search terms and results.</p>
+<p>Another limitation could be the NLP and LLM used not being up to date on communication such as relatively new slang or common terms. A possible solution would be to use updated NLP and LLM models or data augmentation or retraining with new data in order to bring them up to speed to current language usage.</p></li>
+<li><p>Write an AI for research guide (you can use bullet points) incorporating ethnical, technical and academic concerns that could lead to more problems than solutions (e.g.&nbsp;Hinton)</p>
+<p>While AI is a tool that can help research, there are a number of factors to consider when one does utilize such a tool: AI is an imperfect tool that often has issues with inaccurate information from unreliable sources or “hallucinations” (Where the AI will 100% lie to your face), bias, robustness, and inability to follow stated directions. As such, one should always double check the output from such AI models rather than blindly trusting in it.</p></li>
+</ol>
+<p>Not all AI models are created equal, and as such it is advised to select the right model for the task at hand based on its relative strengths and weaknesses.</p>
+<p>When using data to train AI or harvested by AI for research purposes (or in general), there are a great deal of ethical concerns related to what data is used. While it may be easy to understand that using sensitive information such as medical, trade secrets, or otherwise confidential information can have some issues, It is also important to consider the ethical ramifications of using work and data of others that might wish to be excluded from such activities.</p>
+<p>Many have expressed concern (and often anger) about their work and posts being used for AI training data and in research data in general without permission (and sometimes used for commercial purposes) and in some cases without anonymising data.</p>
+<p>In addition to ethical concerns there are also possible legal ramifications as a number of ongoing lawsuits have been filed.</p>
+<p>It is also important to disclose such AI usage in general, but especially academic settings and avoid passing the work done as one’s similarly to when one cites sources.</p>
 
 
 
