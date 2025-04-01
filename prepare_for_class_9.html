@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 4 – Logan Lomonaco</title>
+<title>Prepare for class 9 – Logan Lomonaco</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 4</h1>
+<h1 class="title">Prepare for class 9</h1>
 </div>
 
 
@@ -198,22 +198,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Looking at the Biden-Xi summit data:</p>
-<p>The data starts with a focuses on Hashtags from Twitter data about President Biden and Xi summit in Novemeber 2021. The generated chart shows some f the more prominent Hashtags and how often they appear together with thicker blue lines meaning they are more closely linked. The majority of Hashtags cluster around #xijinping, #joebiden, #biden, #america, #americans, #china, #coronavirus, and #fentanyl. These Hashtags cover a range of topics relevant to important issues at the time of the summit. there are also less bold lines indicating alternat hasttags for countries as well as a smaller cluster around #biden such as #uyghurgenocide, #tibetans, and #humanrights that would indicate that some were pressuring Biden to talk, action related to these issues during the summit, or to object to talks with Xi due to these issues.</p>
-<p>Another Network plot looks at the twitter handles related to prominent accounts that include the media, participants in the summit, and other accounts that were related to tweets related to the summit. similarly to the previous plot, lines link related usernames to each other based on relevence. This plot shows that prominant users are often clustered in their interaction or mentions, such is seen with foxbusiness and morningsmaria, or politico bing linked to nahaltoosi, phelimkine, whnsc, and anderscorr.</p>
-<p>Looking at the US presidential inaugural speeches:</p>
-<p>Overall US presidential inaugural speeches was visualized using Wordcloud to better see what the most common words are. The overall picture shows that words such as “government”, “states”, “people”, “may”, “public”, “war”, “great”, “nation”, and “citizens” (just a few examples) are common across the data of all inaugural speeches.</p>
-<p>In contrast, when looking at the inaugural speeches of president Bush, Biden, Obama, and Trump, we can see different words being prioritized in the speeches and compared to each other. Bush used “freedom” significantly more that any other word in his speech, with “liberty” and “free” being used significantly less but a little more than others. Trump used “america” the most and eclipsed the use of any other word in the comparison by a large margin, he also used “american”, “dreams”, “back”, “country”, “protected”, “people”, and “across” to a significant degree and showing that his speech was the most repetitive of the four. Biden used “us” the most with his other most used words being “democracy”, “can”, “story”, “one”, and “another”. Obama’s speech was the least repetitive with his word usage being more uniform with a few words being more common such as “must”, “journey”, “time”, and “generation”.</p>
-<p>In the Lexical dispersion plots, we find that the term “american” has seen more use over time with some of the heaviest usage being under Trump in 2017 and Clinton in 1997 and with most usage appearing to have middle to high Relative token index scores. While not as much data was available for the term “Trade”, it is notable that under Eisenhower and Clinton it tends to have a higher index while Bush and Trump have lower index scores. The word “people” seems to have not changed significantly over time and has had a range of Relative token index scores.</p>
-<p>What is Wordfish?</p>
-<p>From the Wordfish website: “Wordfish is a computer program written in the R statistical language to extract political positions from text documents. Word frequencies are used to place documents onto a single dimension. Wordfish is a scaling technique and does not need any anchoring documents to perform the analysis. Instead, it relies on a statistical model of word counts. The current implementation assumes a Poisson distribution of word frequencies. Positions are estimated using an expectation-maximization algorithm. Confidence intervals for estimated positions can be generated from a parametric bootstrap.The name Wordfish pays tribute to the French meaning of the word “poisson”.”</p>
-<p>In essence it is a tool that can be used with Quanteda that can be used to look at text.</p>
-<p>From the Quanteda website: “Wordfish is a Poisson scaling model of one-dimensional document positions (Slapin and Proksch 2008). Wordfish also allows for scaling documents, but in comparison to Wordscores, reference scores/texts are not required. Wordfish is an unsupervised one-dimensional text scaling method, meaning that it estimates the positions of documents solely based on the observed word frequencies.”</p>
-<p>How to compare positions (hint: wordfish and scaling methods)</p>
-<p>It would look like higher frequency usage of a term would result in documents have higher scores on the Relative token index.</p>
-<p>Create a corpus using government documents selected from the govinfo.gov website (use sample program govtdata01.R)</p>
-<p>saved as a pdf but it’s so big that github refuses to let me upload it to my site (its a 876 page PDF of HD pictures of gov documents at 414,820 KB), as such I can upload it here, but i did create a corpus.</p>
-<p>Small update, but the due date was extended and a new version of the code was given in class that fixed my issue as it now downloads seperate pdf files rather than one big one, I ran it and was downloading them until Dr Ho told me to stop (code auto downloads 1000 government documents, so he didn’t want people overloading the government website with download requests).</p>
+<p>March Madness (NCAA Men’s Basketball DI)</p>
+<ol type="a">
+<li>If you build a predictive model, how would you plan for such a project?</li>
+</ol>
+<p>I would start by getting data from NCAA Men’s Basketball DI in years past as well as performance data or stats of players.</p>
+<ol start="2" type="a">
+<li>How to get data?</li>
+</ol>
+<p>This information should be available on a number of websites that track this kind of information for fantasy basketball or sports as well as on official channels and sports data archives.</p>
+<ol start="3" type="a">
+<li>What is the dependent variable? Models?</li>
+</ol>
+<p>The dependent variable would be the results or rankings of the The NCAA college basketball single-elimination tournament could also be the outcome of a game if one wanted an analysis on the game level instead.</p>
+<ol start="4" type="a">
+<li>What variables can be used to predict the outcome?</li>
+</ol>
+<p>Previous team performance in March Madness, player performance or stats, Points Per Game (PPG) indicate a team’s offensive strength, Defensive Efficiency measures points allowed per 100 possessions, Rebound Rate shows the percentage of missed shots retrieved by the team, Turnover Rate reflects the percentage of possessions ending in turnovers.</p>
 
 
 
